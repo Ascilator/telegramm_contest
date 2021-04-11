@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Tg charts</title>
+</head>
+
+<body>
+    <div class="big_wrapper">
+        <div class="canvas_cont">
+            <h1>Telegram contest</h1>
+            <div class="tg-chart">
+                <div class="tg-chart-tooltip" data-el="tooltip"></div>
+                <canvas data-el="main" class="chart"></canvas>
+                <div class="tg-chart-slider" data-el="slider">
+                    <canvas></canvas>
+                    <div data-el="left" class="tg-chart-slider__left">
+                        <div class="tg-chart-slider__arrow--left" data-el="arrow" data-type="left"></div>
+                    </div>
+
+                    <div data-el="window" data-type="window" class="tg-chart-slider__window"></div>
+
+                    <div data-el="right" class="tg-chart-slider__right">
+                        <div class="tg-chart-slider__arrow--right" data-el="arrow" data-type="right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="theme_cont">
+            <div class="back">
+                <div class="icon">
+                    <img class="light" src="img/sun.svg" alt="">
+                    <img class="dark" src="img/moon.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/dark_mode.js"></script>
+    <script type="module" src="scripts/app.js"></script>
+</body>
+
+</html>
